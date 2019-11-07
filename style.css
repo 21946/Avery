@@ -1,0 +1,84 @@
+/* font */
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+h1 {
+    font-family: 'Fascinate Inline';font-size: 60px;
+}
+/* end of font */
+
+/* navigation */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #99D2FF;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #FFFFFF;
+}
+li a:hover {
+  text: #FFFFFF;
+}
+/* end of navigation */
+
+/* fade */
+#grad1 {
+  background-color: white;
+  background-image: linear-gradient(#99D2FF, white);
+}
+/* end of fade */
+
+/* images */
+ img{
+  border: 5px solid black;
+  width: 100%;
+}
+/* end of images */
+/* css grid */
+.grid{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-template-areas:
+    "header header header"
+    "aside1 main aside2"
+    "footer footer footer";
+}
+.header{
+  grid-area: header;
+}
+.main{
+  grid-area: main;
+}
+.aside1{
+  grid-area: aside1;
+  justify-self: stretch;
+}
+.aside2{
+  grid-area: aside2;
+}
+.footer{
+  grid-area: footer;
+}
+h1 {
+  text-align: center;
+}
+main {
+  text-align: center;
+}
