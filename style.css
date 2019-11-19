@@ -12,8 +12,6 @@ h1 {
 /* navigation */
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
   background-color: #99D2FF;
 }
@@ -53,7 +51,7 @@ li a:hover {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 500px 1fr;
   grid-column-gap: 20px;
   grid-template-areas:
     "header header header"
@@ -68,13 +66,13 @@ li a:hover {
 }
 .aside1{
   grid-area: aside1;
-  justify-self: stretch;
 }
 .aside2{
   grid-area: aside2;
 }
 .footer{
   grid-area: footer;
+  text-align: center;
 }
 h1 {
   text-align: center;
